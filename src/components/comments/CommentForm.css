@@ -1,0 +1,74 @@
+.feedbackForm {
+  width: 80%;
+}
+.feedbackForm textarea,
+.feedbackForm input {
+  width: 80%;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--color-crimson);
+  font-size: 18px;
+}
+.feedbackForm textarea {
+  height: 7rem;
+  padding: 0.5rem 0 0 0.5rem;
+}
+.feedbackForm input {
+  margin-top: 0.75rem;
+  height: 2.75rem;
+  padding: 0.5rem;
+}
+
+.feedbackForm input:focus {
+  outline: none;
+  background: rgb(252, 249, 249);
+}
+.feedbackForm textarea:focus {
+  outline: none;
+  background: rgb(252, 249, 249);
+}
+.action {
+  width: 80%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+.action button {
+  background-color: var(--color-crimson);
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.35rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.action button:hover,
+.action button:focus {
+  opacity: 0.8;
+}
+.submitfeedback .feedbackCon {
+  text-align: center;
+}
+.submitfeedback h3 {
+  text-align: center;
+}
+.soon {
+  font-size: 16px;
+}
+@media screen and (max-width: 600px) {
+  .feedbackForm {
+    width: 25rem;
+  }
+  .action {
+    flex-direction: column;
+  }
+}

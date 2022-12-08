@@ -1,0 +1,174 @@
+.head {
+  height: auto;
+  border: 1px solid var(--color-golden);
+  margin: auto;
+  background-image: url("../../assets/bg.png");
+  background-size: cover;
+  padding: 1rem;
+}
+.sectionSuccess {
+  margin-bottom: 10rem;
+}
+.head h3,
+p {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  margin-left: 5rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.control {
+  margin-bottom: 1rem;
+}
+.control label {
+  text-align: center;
+  display: block;
+  color: #ccc;
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+.control p {
+  color: crimson;
+}
+
+.control input,
+.control textarea {
+  background: #ccc;
+
+  width: 30rem;
+  font: inherit;
+  font-size: 22px;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid rgb(248, 239, 239);
+}
+.control input::placeholder,
+.control textarea::placeholder {
+  color: black;
+}
+.control input:focus,
+.control textarea:focus {
+  outline: 1px solid var(--color-golden);
+
+  background: #fff;
+}
+.reserved {
+  margin: 1rem 2rem 0 1rem;
+}
+.reserved img {
+  width: 40rem;
+  height: 30rem;
+  border-radius: 12px;
+}
+.actions {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.homePg {
+  margin: 0 auto;
+}
+.actions button {
+  background-color: var(--color-crimson);
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.actions .cancel {
+  background-color: #ccc;
+}
+.actions .cancel:hover,
+.actions .cancel:focus {
+  background-color: rgb(160, 154, 154);
+}
+.actions .book:hover,
+.actions .book:focus {
+  background-color: rgb(240, 199, 150);
+}
+
+.success {
+  text-align: center;
+  font-size: 38px;
+}
+.successbtn {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 910px) {
+  .main {
+    flex-direction: column;
+  }
+  .head {
+    border: none;
+    align-items: center;
+  }
+  .reserved img {
+    margin-left: 3rem;
+  }
+  .actions {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  .successbtn {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .head {
+    width: 25rem;
+    margin: 0 auto;
+    border: none;
+  }
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form {
+    margin-left: 0;
+  }
+  .reserved img {
+    width: 20rem;
+    margin-left: 1rem;
+  }
+
+  .form input,
+  .form textarea {
+    width: 20rem;
+  }
+  .successbtn {
+    margin: auto;
+  }
+}
+.sectionSuccess p {
+  color: var(--color-crimson);
+}
+@media screen and (max-width: 600px) {
+  .sectionSuccess p {
+    margin-top: 3rem;
+    padding: 1rem;
+    line-height: 2rem;
+  }
+}

@@ -1,0 +1,47 @@
+.comment-image-container {
+  margin-right: 12px;
+}
+
+.comment-image-container img {
+  color: antiquewhite;
+  border-radius: 50px;
+  width: 30px;
+}
+.commentMain {
+  width: 80%;
+  background: black;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.26);
+}
+.comment {
+  display: flex;
+}
+.comment-content {
+  display: flex;
+  margin-top: 0.5rem;
+
+  align-items: center;
+}
+.comment-author {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 1rem;
+  color: #ccc;
+}
+.comment-date {
+  font-size: 16px;
+  margin-left: 1rem;
+  color: rgb(237, 225, 225);
+}
+.comment-text {
+  margin-top: 0.5rem;
+  font-size: 20px;
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .commentMain {
+    width: 100%;
+  }
+}
